@@ -1,0 +1,91 @@
+site_name: DeepFlyer
+site_url: https://docs.deepflyer.umamaram.com
+site_author: Uma Maheswar Reddy Maram
+site_description: Learn Drone AI through Reinforcement Learning - User Guide and Activity Reference
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/lightbulb-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to system preference
+  font:
+    text: Open Sans
+    code: JetBrains Mono
+  icon:
+    logo: material/quadcopter
+    repo: fontawesome/brands/github
+
+repo_name: umrm/drone_rl
+repo_url: https://github.com/umrm/drone_rl
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview:        getting-started/index.md
+      - Quick Start:     getting-started/quickstart.md
+      - The Interface:   getting-started/interface.md
+  - Activities:
+      - All Activities:        activities/index.md
+      - Manual Control:        activities/manual-control.md
+      - Waypoint Navigation:   activities/waypoint-navigation.md
+      - Obstacle Avoidance:    activities/obstacle-avoidance.md
+      - PID Tuning:            activities/pid-tuning.md
+      - RL Training:           activities/reinforcement-learning.md
+  - Platform:
+      - Overview:     platform/index.md
+      - Dashboard:    platform/dashboard.md
+      - Leaderboard:  platform/leaderboard.md
+      - Profile:      platform/profile.md
+  - Technical:
+      - Overview:           technical/index.md
+      - Architecture:       technical/architecture.md
+      - API Reference:      technical/api.md
+      - Simulation Stack:   technical/simulation.md
+      - Deployment:         technical/deployment.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - css/extra.css
