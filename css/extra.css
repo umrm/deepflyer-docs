@@ -1,0 +1,313 @@
+/* ═══════════════════════════════════════════════════
+   DeepFlyer Docs — Custom Stylesheet
+   Theme: Indigo primary / Amber accent / Open Sans
+   ═══════════════════════════════════════════════════ */
+
+/* ── Activity level badges ───────────────────────── */
+.badge-beginner {
+  display: inline-block;
+  padding: 0.2em 0.75em;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.35);
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+.badge-intermediate {
+  display: inline-block;
+  padding: 0.2em 0.75em;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(255, 193, 7, 0.15);
+  color: #f9a825;
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+.badge-inprogress {
+  display: inline-block;
+  padding: 0.2em 0.75em;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(158, 158, 158, 0.15);
+  color: #9e9e9e;
+  border: 1px solid rgba(158, 158, 158, 0.3);
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+/* ── Keyboard key style ──────────────────────────── */
+.md-typeset kbd {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-bottom: 2px solid var(--md-default-fg-color--light);
+  border-radius: 5px;
+  padding: 0.12em 0.45em;
+  font-family: var(--md-code-font-family);
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  box-shadow: 0 1px 0 var(--md-default-fg-color--lighter);
+}
+
+/* ── Status indicator pills ──────────────────────── */
+.status-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.2em 0.7em;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--md-code-font-family);
+  background: rgba(76, 175, 80, 0.12);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.status-connecting {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.2em 0.7em;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--md-code-font-family);
+  background: rgba(255, 193, 7, 0.12);
+  color: #f9a825;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.status-disconnected {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.2em 0.7em;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--md-code-font-family);
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+/* ── Activity header card ────────────────────────── */
+.activity-header {
+  padding: 1.4rem 1.6rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  margin-bottom: 1.6rem;
+}
+
+.activity-header h2 {
+  margin: 0 0 0.4rem 0 !important;
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 700 !important;
+}
+
+.activity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.6rem;
+}
+
+.activity-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+/* ── Step numbers ────────────────────────────────── */
+.md-typeset .step {
+  counter-increment: step-counter;
+  padding: 1rem 1rem 1rem 3.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+  position: relative;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .step::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Tables ──────────────────────────────────────── */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.855rem;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) thead tr th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.55rem 0.9rem;
+  vertical-align: middle;
+}
+
+/* ── Images ──────────────────────────────────────── */
+.md-typeset img {
+  border-radius: 8px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+.md-typeset figcaption,
+.md-typeset .caption {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+/* ── Admonitions ─────────────────────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 7px;
+  font-size: 0.875rem;
+}
+
+/* ── In-progress notice ──────────────────────────── */
+.inprogress-box {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px dashed var(--md-default-fg-color--lighter);
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+  margin: 1.5rem 0;
+}
+
+.inprogress-box .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.inprogress-box h3 {
+  margin: 0 0 0.5rem 0 !important;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+.inprogress-box ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0.8rem 0 0 0;
+}
+
+/* ── Learning path grid (homepage) ──────────────── */
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.path-card {
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.path-card:hover {
+  border-color: var(--md-primary-fg-color);
+}
+
+.path-card .num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--md-primary-fg-color);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.path-card .title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.path-card .level {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ── Tab headings in Technical section ──────────── */
+.md-typeset .tabbed-set > input + label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ── Code blocks ─────────────────────────────────── */
+.md-typeset pre {
+  border-radius: 8px;
+  font-size: 0.84em;
+}
+
+/* ── Goals list ──────────────────────────────────── */
+.goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.goals-list li::before {
+  content: "✓ ";
+  color: #4caf50;
+  font-weight: 700;
+}
