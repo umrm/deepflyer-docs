@@ -42,8 +42,8 @@ theme:
     logo: material/quadcopter
     repo: fontawesome/brands/github
 
-repo_name: umrm/drone_rl
-repo_url: https://github.com/umrm/drone_rl
+repo_name: umrm/deepflyer-docs
+repo_url: https://github.com/umrm/deepflyer-docs
 
 nav:
   - Home: index.md
